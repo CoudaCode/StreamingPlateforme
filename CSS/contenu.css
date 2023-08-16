@@ -15,6 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #192026;
 }
+
 /* ************ HEADER ***************** */
 header {
   position: relative;
@@ -229,68 +230,6 @@ header {
 
 /* ************ HEADER ***************** */
 
-/**************************/
-/* NOUVEAUTE */
-/**************************/
-.sectionNouveaute{
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  padding: 0 2rem;
-}
-.sectionNouveaute .title{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-}
-.sectionNouveaute .content{
-  width: 100%;
-  height: auto;
-  background-color: #5d514c;
-  overflow: hidden;
-  
-}
-.sectionNouveaute .content .cards{
-    width: 2700px;
-    display: flex;
-    gap: 0.5rem;
-    animation: slider 20s infinite alternate forwards;
-    position: relative;
-}
-@keyframes slider {
-  0% {
-    left: 0px;
-  }
-  20% {
-    left: 0px;
-  }
-  25% {
-    left: -900px;
-  }
-  70% {
-    left: -900px;
-  }
-  75% {
-    left: -1800px;
-  }
-  100% {
-    left: -1800px;
-  }
-}
-.sectionNouveaute .content .cards .card{
-  width: 30%;
-  height: 100px;
-  background-color: #fff;
-  display: flex;
-  border: 1px solid #d27575;
-}
-/* ************ NOUVEAUTE ***************** */
 
 /**************************/
 /* FOOTER */
@@ -409,3 +348,4 @@ header {
   text-align: center;
   margin-top: 1rem;
 }
+
