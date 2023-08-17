@@ -226,13 +226,12 @@ header {
   width: 50px;
 }
 
-
 /* ************ HEADER ***************** */
 
 /**************************/
 /* NOUVEAUTE */
 /**************************/
-.sectionNouveaute{
+.sectionNouveaute {
   width: 100%;
   height: auto;
   display: flex;
@@ -242,26 +241,27 @@ header {
   margin-top: 2rem;
   padding: 0 2rem;
 }
-.sectionNouveaute .title{
+.sectionNouveaute .title {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
 }
-.sectionNouveaute .content{
+.sectionNouveaute .content {
   width: 100%;
   height: auto;
   background-color: #5d514c;
   overflow: hidden;
-  
 }
-.sectionNouveaute .content .cards{
-    width: 2700px;
-    display: flex;
-    gap: 0.5rem;
-    animation: slider 20s infinite alternate forwards;
-    position: relative;
+.sectionNouveaute .content .cards {
+  width: 350rem;
+  display: grid;
+  height: 7rem;
+  gap: 1.5rem;
+  grid-template-columns: repeat(30, 300px);
+  animation: slider 20s infinite alternate forwards;
+  position: relative;
 }
 @keyframes slider {
   0% {
@@ -280,12 +280,10 @@ header {
     left: -1800px;
   }
   100% {
-    left: -1800px;
+    left: -2700px;
   }
 }
-.sectionNouveaute .content .cards .card{
-  width: 30%;
-  height: 100px;
+.sectionNouveaute .content .cards .card {
   background-color: #fff;
   display: flex;
   border: 1px solid #d27575;
@@ -295,32 +293,30 @@ header {
 /**************************/
 /* FOOTER */
 /**************************/
-
 .footer {
   width: 100%;
   padding: 1.8rem 0;
   display: flex;
-  margin-top:1rem ;
+  margin-top: 1rem;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
 }
 .trait {
   width: 100%;
   background: #363536;
 }
-.footer .grid {  
+.footer .grid {
   width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 1.5rem ;
+  gap: 1.5rem;
   justify-content: space-around;
 }
 .footer .grid .div1 {
   width: 30%;
   height: auto;
-
 }
 .footer .grid .div2 {
   width: 20%;
@@ -330,34 +326,34 @@ header {
   width: 14%;
   height: 8rem;
 }
-.newletters h4{
-    color: white;
+.newletters h4 {
+  color: white;
 }
-.suivezNous{
+.suivezNous {
   display: flex;
   height: auto;
   width: 30rem;
 }
-.newletters textarea{
+.newletters textarea {
   width: 80%;
   height: 100px;
   border-radius: 5px;
   border: none;
   padding: 0 10px;
   outline: none;
-  background: #D9D9D9;
+  background: #d9d9d9;
   margin-top: 10px;
   resize: none;
 }
-.div3 .content{
-    width: 2.4rem;
-    height: 2.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
+.div3 .content {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
 }
-.newletters button{
+.newletters button {
   width: 80%;
   height: 40px;
   border-radius: 5px;
@@ -365,7 +361,7 @@ header {
   padding: 0 10px;
   outline: none;
   border-radius: 28px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   margin-top: 10px;
   color: black;
   cursor: pointer;
@@ -376,30 +372,30 @@ header {
   line-height: 24px;
 }
 
-.suivezNous h4{
-    margin-top: 0.8rem;
-    color: #807E81;
-    font-weight: bold;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 24px;
-    color: white;
+.suivezNous h4 {
+  margin-top: 0.8rem;
+  color: #807e81;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+  color: white;
 }
-.suivezNous .icones{
+.suivezNous .icones {
   width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    justify-content: space-around;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: space-around;
 }
 .lab {
   color: white;
 }
 
-.footer-bottom p{
+.footer-bottom p {
   color: white;
   font-family: Poppins;
   font-size: 14px;
