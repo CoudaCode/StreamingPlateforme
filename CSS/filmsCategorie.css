@@ -23,14 +23,16 @@ header {
   background-color: var(--primary-color);
   color: white;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 }
-/* UTILITIES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: serif, sans-serif;
 }
-
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -47,6 +49,7 @@ header {
   transition: all 0.2s ease;
   margin-right: 10px;
 }
+
 .navbar li {
   list-style: none;
 }
@@ -116,8 +119,8 @@ input[type="checkbox"] {
 
 .promo {
   position: relative;
-  width: 70%;
-  height: 85%;
+  width: 80%;
+  height: 74%;
   border: 1px solid white;
   background-color: linear-gradient(
     227deg,
@@ -127,83 +130,96 @@ input[type="checkbox"] {
   );
   border-radius: 3px;
 }
-.promo .lancer {
-  width: 50%;
-  height: 50%;
+
+.promo .Grdtitle {
   position: absolute;
-  top: 78%;
-  text-align: start;
-  left: 32%;
+  top: 50%;
+  left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%);
 }
-/* 
-.promo .lancer .grandTitle {
-  color: var(--ffffff, #fff);
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-  font-family: Poppins;
-  text-align: start;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 48px;
-  letter-spacing: -0.57px;
-  text-transform: capitalize;
-  margin: 10px 0px;
-
-  display: inline-block;
-}
-.promo .lancer .dateTitle {
-  color: var(--ffffff, #fff);
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 24px;
-  margin: 10px 0px;
-
-  display: inline-block;
-}
-.promo .lancer .descriptTitle {
-  color: var(--black-color-737174, #807e81);
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 20px;
-  margin: 10px 0px;
-  display: inline-block;
-}
-.promo .lancer .btn-lancer {
-  border-radius: 3px;
-  width: 15.6rem;
-  height: auto;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.1);
-}
-.promo .lancer .btn-lancer img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-.promo .lancer .btn-lancer a {
-  text-decoration: none;
-  color: #fff;
-  border: none;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 22px;
-} */
-.prev,
-.next {
-  width: 50px;
+.promo .Grdtitle h1 {
+  font-size: 6rem;
 }
 
 /* ************ HEADER ***************** */
+
+/**************************/
+/* FILM */
+/**************************/
+
+.films {
+  width: 100%;
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  position: relative;
+}
+.films .cadre {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1.5fr);
+}
+
+.films .cadre .card {
+  padding: 1rem;
+  background-color: white;
+}
+
+.films .cadre .card .cardImg {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  position: relative;
+  background-color: #d9d9d9;
+}
+.btnJouer{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.films .cadre .card .cardTitle {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+}
+.films .cadre .card .cardTitle h3 {
+  margin: auto;
+  color: #807e81;
+  font-family: Poppins;
+  font-size: 1vw;
+  text-align: start;
+  white-space: nowrap;
+}
+.films .cadre .card .cardTitle h4{
+  margin: auto;
+  color: #807e81;
+  font-family: Poppins;
+  font-size: 0.5vw;
+  text-align: start;
+  white-space: nowrap;
+}
+.films .cadre .card .cardTitle button{
+   background-color: transparent;
+    border: none;
+}
+/* ************ FILM ***************** */
 
 /**************************/
 /* FOOTER */
@@ -339,7 +355,6 @@ input[type="checkbox"] {
 
   .menu li:hover {
     display: inline-block;
-
     transition: 0.3s ease;
   }
 
@@ -444,38 +459,59 @@ input[type="checkbox"] {
     padding: 10px 20px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.1);
+  }
+  .promo .lancer .descriptTitle {
+    color: var(--black-color-737174, #807e81);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    display: none;
+    margin: 10px 0px;
+  }
+  .promo .lancer .grandTitle {
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: -0.57px;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    display: inline-block;
+  }
+
+  .promo .lancer .dateTitle {
+    font-size: 7px;
+    font-weight: 900;
+    line-height: 19px;
+    margin: -3px 0px;
+    display: inline-block;
+  }
+
+  .hero {
+    gap: 0;
+  }
+  .films {
+    height: 100vh;
+  }
+  .films .cadre {
+    gap: 0.3rem;
+  }
+  .films .cadre .card {
+    padding: 0.2rem;
+    background-color: white;
+  }
+  .promo .Grdtitle h1 {
+    font-size: 4rem;
 }
-.promo .lancer .descriptTitle {
-  color: var(--black-color-737174, #807e81);
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 20px;
-  display: none;
-  margin: 10px 0px;
+.films .cadre .card .cardTitle h4{
+
+  font-size: 1.5vw;
 }
-.promo .lancer .grandTitle {
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 24px;
-  letter-spacing: -0.57px;
-  text-transform: capitalize;
-  margin: 10px 0px;
-  display: inline-block;
+.films .cadre .card .cardTitle h3{
+
+  font-size: 2vw;
 }
 
-.promo .lancer .dateTitle {
-  font-size: 7px;
-  font-weight: 900;
-  line-height: 19px;
-  margin: -3px 0px;
-  display: inline-block;
-}
-
-
-.hero{
-  gap: 0;
-}
 }
