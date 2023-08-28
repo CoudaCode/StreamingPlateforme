@@ -25,12 +25,6 @@ header {
   padding: 0 2rem;
 }
 /* UTILITIES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -177,6 +171,10 @@ input[type="checkbox"] {
 }
 .promo .lancer .btn-lancer {
   border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  backdrop-filter: blur(20px);
+  border-radius: 3px;
   width: 15.6rem;
   height: auto;
   padding: 10px 20px;
@@ -299,7 +297,7 @@ input[type="checkbox"] {
   margin-top: 10px;
   border: 1px solid #f41b3b;
 }
-.sectionNouveaute .content .cards .card .Cardbody button a{
+.sectionNouveaute .content .cards .card .Cardbody button a {
   text-decoration: none;
   color: #f41b3b;
 }
@@ -783,38 +781,37 @@ input[type="checkbox"] {
     padding: 10px 20px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.1);
-}
-.promo .lancer .descriptTitle {
-  color: var(--black-color-737174, #807e81);
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 20px;
-  display: none;
-  margin: 10px 0px;
-}
-.promo .lancer .grandTitle {
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 24px;
-  letter-spacing: -0.57px;
-  text-transform: capitalize;
-  margin: 10px 0px;
-  display: inline-block;
-}
+  }
+  .promo .lancer .descriptTitle {
+    color: var(--black-color-737174, #807e81);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    display: none;
+    margin: 10px 0px;
+  }
+  .promo .lancer .grandTitle {
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: -0.57px;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    display: inline-block;
+  }
 
-.promo .lancer .dateTitle {
-  font-size: 7px;
-  font-weight: 900;
-  line-height: 19px;
-  margin: -3px 0px;
-  display: inline-block;
-}
+  .promo .lancer .dateTitle {
+    font-size: 7px;
+    font-weight: 900;
+    line-height: 19px;
+    margin: -3px 0px;
+    display: inline-block;
+  }
 
-
-.hero{
-  gap: 0;
-}
+  .hero {
+    gap: 0;
+  }
 }
