@@ -44,7 +44,6 @@ header {
 .navbar li {
   list-style: none;
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -66,7 +65,6 @@ header {
 .logo {
   font-size: 32px;
 }
-
 /* NAVBAR MENU */
 .menu {
   display: flex;
@@ -79,7 +77,6 @@ header {
   border-radius: 5px;
   transition: 0.3s ease;
 }
-
 .menu li {
   padding: 5px 14px;
   display: flex;
@@ -138,20 +135,27 @@ input[type="checkbox"] {
   row-gap: 1rem;
 }
 .suggestion .card {
-  width: 270px;
-  height: 173px;
+  width: 10vw;
+  height: 15vh;
   border-radius: 12px;
   position: relative;
   background: #0f0f0f;
 }
 .suggestion .card .btnJouer {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.infoVideo{
+  width: 100vw;
+  height: 200px;
+  background-color: #0f0f0f;
+}
+
 
 /**************************/
 /* FOOTER */
@@ -300,7 +304,7 @@ input[type="checkbox"] {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     overflow: auto;
   }
@@ -334,7 +338,22 @@ input[type="checkbox"] {
 
   .hero {
     grid-template-columns: 10fr 2fr;
-}
+  }
+  .promo .deo {
+    width: 100%;
+    height: 40%;
+  }
+  .suggestion .card {
+    width: 230px;
+    height: 100px;
+  }
+  .hero {
+    height: 80%;
+  }
+
+  header {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -352,7 +371,7 @@ input[type="checkbox"] {
   }
   .suggestion .cadres {
     flex-direction: row;
-}
+  }
   .menu li:hover {
     display: inline-block;
 
@@ -386,47 +405,20 @@ input[type="checkbox"] {
     width: auto;
     height: auto;
   }
-
-  .promo .lancer .btn-lancer {
-    border-radius: 3px;
-    width: 8.6rem;
-    border: none;
-    height: auto;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  .promo .lancer .descriptTitle {
-    color: var(--black-color-737174, #807e81);
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.45);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 20px;
-    display: none;
-    margin: 10px 0px;
-  }
-  .promo .lancer .grandTitle {
-    font-size: 19px;
-    font-weight: 900;
-    line-height: 24px;
-    letter-spacing: -0.57px;
-    text-transform: capitalize;
-    margin: 10px 0px;
-    display: inline-block;
-  }
-
-  .promo .lancer .dateTitle {
-    font-size: 7px;
-    font-weight: 900;
-    line-height: 19px;
-    margin: -3px 0px;
-    display: inline-block;
-  }
-
   .hero {
-    gap: 2rem;
     grid-template-columns: auto;
+  }
+
+  .suggestion .card {
+    width: 21vw;
+  }
+  .suggestion .cadres {
+    flex-direction: row;
+    gap: 0.3rem;
+  }
+  .promo .deo {
+    width: 85%;
+    height: 100%;
+    top: 70%;
   }
 }
