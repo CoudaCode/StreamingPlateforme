@@ -150,13 +150,45 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
 }
 
-.infoVideo{
+.infoVideo {
   width: 100vw;
-  height: 200px;
+  height: 30%;
   background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoVideo .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.infoVideo .container .imgDuree {
+  width: 80%;
+  height: 70%;
+  
+  display: flex;
+}
+.infoVideo .container .imgDuree .img {
+  width: 20%;
+  height: 100%;
+ 
 }
 
-
+.infoVideo .container .imgDuree .Time {
+  width: 30%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0 0 1rem;
+}.infoVideo .container .description {
+  width: 40%;
+  text-align: justify;
+  color: white; 
+  white-space: inherit;
+}
 /**************************/
 /* FOOTER */
 /**************************/
@@ -277,6 +309,9 @@ input[type="checkbox"] {
   body {
     overflow: auto;
   }
+  .infoVideo .container .description {
+    width: 100%;
+}
   .menu {
     display: none;
     position: absolute;
@@ -308,6 +343,15 @@ input[type="checkbox"] {
   body {
     overflow: auto;
   }
+  .infoVideo .container .imgDuree .Time {
+    width: 50%;
+}
+.infoVideo .container .description {
+  width: 100%;
+  text-align: justify;
+  color: white;
+  white-space: inherit;
+}
   .menu {
     display: none;
     position: absolute;
@@ -360,6 +404,9 @@ input[type="checkbox"] {
   body {
     overflow: auto;
   }
+  .infoVideo .container .imgDuree {
+    width: 91%;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -372,6 +419,13 @@ input[type="checkbox"] {
   .suggestion .cadres {
     flex-direction: row;
   }
+  .infoVideo .container .imgDuree .Time {
+    width: 50%;
+  }
+  .infoVideo .container .imgDuree .img {
+    width: 30%;
+    height: 100%;
+}
   .menu li:hover {
     display: inline-block;
 
@@ -420,5 +474,8 @@ input[type="checkbox"] {
     width: 85%;
     height: 100%;
     top: 70%;
+  }
+  .infoVideo .container .description {
+    width: 100%;
   }
 }
