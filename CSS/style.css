@@ -369,7 +369,7 @@ input[type="checkbox"] {
 }
 .sectionFilm .content .cards .card img {
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 .sectionFilm .content .cards .card p {
   position: absolute;
@@ -446,7 +446,7 @@ input[type="checkbox"] {
 }
 .sectionClub .content .cards .card img {
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 .sectionClub .content .cards .card p {
   position: absolute;
@@ -523,7 +523,7 @@ input[type="checkbox"] {
 }
 .sectionComedie .content .cards .card img {
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 .sectionComedie .content .cards .card p {
   position: absolute;

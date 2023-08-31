@@ -466,15 +466,18 @@ input[type="checkbox"] {
   .suggestion .card {
     width: 21vw;
   }
+  
   .suggestion .cadres {
     flex-direction: row;
     gap: 0.3rem;
   }
+
   .promo .deo {
     width: 85%;
     height: 100%;
     top: 70%;
   }
+
   .infoVideo .container .description {
     width: 100%;
   }
