@@ -27,12 +27,17 @@ header {
 }
 .logo {
   font-size: 2rem;
+  color: red;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
   font-family: serif, sans-serif;
 }
+.logo a{
+  color: red;
+}
+
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -150,7 +155,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 250vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +172,7 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
   display: grid;
   gap: 1rem;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(5, 1.5fr);
 }
 
@@ -183,7 +188,7 @@ input[type="checkbox"] {
   position: relative;
   background-color: #d9d9d9;
 }
-.btnJouer{
+.btnJouer {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -207,7 +212,7 @@ input[type="checkbox"] {
   text-align: start;
   white-space: nowrap;
 }
-.films .cadre .card .cardTitle h4{
+.films .cadre .card .cardTitle h4 {
   margin: auto;
   color: #807e81;
   font-family: Poppins;
@@ -215,9 +220,9 @@ input[type="checkbox"] {
   text-align: start;
   white-space: nowrap;
 }
-.films .cadre .card .cardTitle button{
-   background-color: transparent;
-    border: none;
+.films .cadre .card .cardTitle button {
+  background-color: transparent;
+  border: none;
 }
 /* ************ FILM ***************** */
 
@@ -504,14 +509,11 @@ input[type="checkbox"] {
   }
   .promo .Grdtitle h1 {
     font-size: 4rem;
-}
-.films .cadre .card .cardTitle h4{
-
-  font-size: 1.5vw;
-}
-.films .cadre .card .cardTitle h3{
-
-  font-size: 2vw;
-}
-
+  }
+  .films .cadre .card .cardTitle h4 {
+    font-size: 1.5vw;
+  }
+  .films .cadre .card .cardTitle h3 {
+    font-size: 2vw;
+  }
 }

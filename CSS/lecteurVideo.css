@@ -65,6 +65,10 @@ header {
 .logo {
   font-size: 32px;
 }
+.logo a{
+  color: red;
+}
+
 /* NAVBAR MENU */
 .menu {
   display: flex;

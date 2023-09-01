@@ -168,7 +168,7 @@ input[type="checkbox"] {
   display: grid;
   gap: 1rem;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, 1.5fr);;
+  grid-template-columns: repeat(5, 1.5fr);
 }
 
 .films .cadre .card {
@@ -207,12 +207,6 @@ input[type="checkbox"] {
   font-weight: bold;
   text-align: start;
   white-space: nowrap;
-}
-.films .cadre .card .cardTitle .title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .films .cadre .card .cardTitle h4{
   margin: auto;

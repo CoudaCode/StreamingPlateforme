@@ -27,12 +27,17 @@ header {
 }
 .logo {
   font-size: 2rem;
+  color: red;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
   font-family: serif, sans-serif;
 }
+.logo a{
+  color: red;
+}
+
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -72,9 +77,12 @@ header {
   color: #fff;
 }
 /* LOGO */
-.logo {
+/* .logo {
   font-size: 32px;
 }
+.logo a{
+  color: red;
+} */
 
 /* NAVBAR MENU */
 .menu {
@@ -120,14 +128,10 @@ input[type="checkbox"] {
 .promo {
   position: relative;
   width: 80%;
+  box-shadow: 1px -2px 12px 20px white;
   height: 74%;
-  border: 1px solid white;
-  background-color: linear-gradient(
-    227deg,
-    rgba(0, 0, 0, 0.32) 0%,
-    rgba(0, 0, 0, 0.33) 46.36%,
-    rgba(0, 0, 0, 0.51) 100%
-  );
+  /* border: 1px solid white; */
+  background-color: linear-gradient( 227deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.33) 46.36%, rgba(0, 0, 0, 0.51) 100% );
   border-radius: 3px;
 }
 
@@ -150,7 +154,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 250vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,13 +171,14 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
   display: grid;
   gap: 1rem;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(5, 1.5fr);
 }
 
 .films .cadre .card {
   padding: 1rem;
   background-color: white;
+  box-shadow: 1px -6px 10px 4px white;;
 }
 
 .films .cadre .card .cardImg {
@@ -181,7 +186,7 @@ input[type="checkbox"] {
   height: 80%;
   border-radius: 5px;
   position: relative;
-  background-color: #d9d9d9;
+  /* background-color: #d9d9; */
 }
 .btnJouer{
   width: 40px;
@@ -195,23 +200,31 @@ input[type="checkbox"] {
   width: 100%;
   height: 20%;
   border-radius: 5px;
-  background-color: #d9d9d9;
+  background-color:black;
   display: flex;
   justify-content: space-around;
 }
 .films .cadre .card .cardTitle h3 {
   margin: auto;
-  color: #807e81;
+  color: white;
   font-family: Poppins;
-  font-size: 1vw;
+  font-size: 1.5vw;
+  font-weight: bold;
   text-align: start;
   white-space: nowrap;
 }
+.films .cadre .card .cardTitle .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .films .cadre .card .cardTitle h4{
   margin: auto;
-  color: #807e81;
+  color: white;
+  font-weight: bold;
   font-family: Poppins;
-  font-size: 0.5vw;
+  font-size: 1vw;
   text-align: start;
   white-space: nowrap;
 }
