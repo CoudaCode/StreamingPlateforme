@@ -150,7 +150,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 200vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,7 +369,9 @@ input[type="checkbox"] {
   .menu li + li {
     margin-top: 12px;
   }
-
+  .films{
+    height: 60vh;
+  }
   input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
@@ -499,10 +501,14 @@ input[type="checkbox"] {
 
   .hero {
     gap: 0;
-  }
+    height: calc(64vh - 64px);
+}
+header {
+  height: 69vh;
+}
   .films {
-    height: 100vh;
-  }
+    height: 47vh;
+}
   .films .cadre {
     gap: 0.3rem;
   }

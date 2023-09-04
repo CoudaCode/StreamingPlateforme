@@ -34,7 +34,7 @@ header {
   cursor: pointer;
   font-family: serif, sans-serif;
 }
-.logo a{
+.logo a {
   color: red;
 }
 
@@ -155,7 +155,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 200vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,7 +498,10 @@ input[type="checkbox"] {
     gap: 0;
   }
   .films {
-    height: 100vh;
+    height: 47vh;
+  }
+  header {
+    height: 69vh;
   }
   .films .cadre {
     gap: 0.3rem;

@@ -34,7 +34,7 @@ header {
   cursor: pointer;
   font-family: serif, sans-serif;
 }
-.logo a{
+.logo a {
   color: red;
 }
 
@@ -131,7 +131,12 @@ input[type="checkbox"] {
   box-shadow: 1px -2px 12px 20px white;
   height: 74%;
   /* border: 1px solid white; */
-  background-color: linear-gradient( 227deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.33) 46.36%, rgba(0, 0, 0, 0.51) 100% );
+  background-color: linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 0.32) 0%,
+    rgba(0, 0, 0, 0.33) 46.36%,
+    rgba(0, 0, 0, 0.51) 100%
+  );
   border-radius: 3px;
 }
 
@@ -154,7 +159,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 200vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +183,7 @@ input[type="checkbox"] {
 .films .cadre .card {
   padding: 1rem;
   background-color: white;
-  box-shadow: 1px -6px 10px 4px white;;
+  box-shadow: 1px -6px 10px 4px white;
 }
 
 .films .cadre .card .cardImg {
@@ -188,7 +193,7 @@ input[type="checkbox"] {
   position: relative;
   /* background-color: #d9d9; */
 }
-.btnJouer{
+.btnJouer {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -200,7 +205,7 @@ input[type="checkbox"] {
   width: 100%;
   height: 20%;
   border-radius: 5px;
-  background-color:black;
+  background-color: black;
   display: flex;
   justify-content: space-around;
 }
@@ -213,13 +218,13 @@ input[type="checkbox"] {
   text-align: start;
   white-space: nowrap;
 }
-.films .cadre .card .cardTitle .title{
+.films .cadre .card .cardTitle .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.films .cadre .card .cardTitle h4{
+.films .cadre .card .cardTitle h4 {
   margin: auto;
   color: white;
   font-weight: bold;
@@ -228,9 +233,9 @@ input[type="checkbox"] {
   text-align: start;
   white-space: nowrap;
 }
-.films .cadre .card .cardTitle button{
-   background-color: transparent;
-    border: none;
+.films .cadre .card .cardTitle button {
+  background-color: transparent;
+  border: none;
 }
 /* ************ FILM ***************** */
 
@@ -420,6 +425,12 @@ input[type="checkbox"] {
   body {
     overflow: auto;
   }
+  .films {
+    height: 47vh;
+  }
+  header {
+    height: 69vh;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -506,7 +517,10 @@ input[type="checkbox"] {
     gap: 0;
   }
   .films {
-    height: 100vh;
+    height: 47vh;
+  }
+  header {
+    height: 69vh;
   }
   .films .cadre {
     gap: 0.3rem;
@@ -517,14 +531,11 @@ input[type="checkbox"] {
   }
   .promo .Grdtitle h1 {
     font-size: 4rem;
-}
-.films .cadre .card .cardTitle h4{
-
-  font-size: 1.5vw;
-}
-.films .cadre .card .cardTitle h3{
-
-  font-size: 2vw;
-}
-
+  }
+  .films .cadre .card .cardTitle h4 {
+    font-size: 1.5vw;
+  }
+  .films .cadre .card .cardTitle h3 {
+    font-size: 2vw;
+  }
 }

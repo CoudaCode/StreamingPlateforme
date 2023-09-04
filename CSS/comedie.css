@@ -128,7 +128,12 @@ input[type="checkbox"] {
   box-shadow: 1px -2px 12px 20px white;
   height: 74%;
   /* border: 1px solid white; */
-  background-color: linear-gradient( 227deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.33) 46.36%, rgba(0, 0, 0, 0.51) 100% );
+  background-color: linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 0.32) 0%,
+    rgba(0, 0, 0, 0.33) 46.36%,
+    rgba(0, 0, 0, 0.51) 100%
+  );
   border-radius: 3px;
 }
 
@@ -151,7 +156,7 @@ input[type="checkbox"] {
 
 .films {
   width: 100%;
-  height: 200vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,11 +201,11 @@ input[type="checkbox"] {
   width: 100%;
   height: 20%;
   border-radius: 5px;
-  background-color:black;
+  background-color: black;
   display: flex;
   justify-content: space-around;
 }
-.films .cadre .card .cardTitle .title{
+.films .cadre .card .cardTitle .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +220,7 @@ input[type="checkbox"] {
   text-align: start;
   white-space: nowrap;
 }
-.films .cadre .card .cardTitle h4{
+.films .cadre .card .cardTitle h4 {
   margin: auto;
   color: white;
   font-weight: bold;
@@ -502,7 +507,7 @@ input[type="checkbox"] {
     gap: 0;
   }
   .films {
-    height: 100vh;
+    height: 47vh;
   }
   .films .cadre {
     gap: 0.3rem;
